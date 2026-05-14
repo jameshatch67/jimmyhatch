@@ -8,7 +8,7 @@ export default function Home() {
           className="mb-8 w-full max-w-md rounded-sm shadow-sm"
         />
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          James Hatch
+          Jimmy Hatch
         </h1>
         <p className="mt-3 text-lg text-neutral-600">
           Yale Jackson School
@@ -190,7 +190,7 @@ export default function Home() {
       </section>
 
       <footer className="mt-24 border-t border-neutral-200 pt-6 text-sm text-neutral-500">
-        © {new Date().getFullYear()} James Hatch
+        © {new Date().getFullYear()} Jimmy Hatch
       </footer>
     </main>
   );

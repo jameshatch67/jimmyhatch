@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "James Hatch",
-  description: "James Hatch — Yale University",
+  title: "Jimmy Hatch",
+  description: "Jimmy Hatch — Yale Jackson School of Global Affairs",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
