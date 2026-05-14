@@ -4,7 +4,7 @@ export default function Home() {
       <header className="mb-16">
         <img
           src="/portrait.jpg"
-          alt="Pen-and-ink portrait of James Hatch with his dog"
+          alt="Mina"
           className="mb-8 w-full max-w-md rounded-sm shadow-sm"
         />
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
