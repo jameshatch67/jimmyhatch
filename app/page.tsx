@@ -2,6 +2,11 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
       <header className="mb-16">
+        <img
+          src="/portrait.jpg"
+          alt="Pen-and-ink portrait of James Hatch with his dog"
+          className="mb-8 w-full max-w-md rounded-sm shadow-sm"
+        />
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
           James Hatch
         </h1>
