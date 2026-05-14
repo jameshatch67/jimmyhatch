@@ -27,13 +27,29 @@ export default function Home() {
         </h2>
         <div className="space-y-4 text-lg leading-relaxed text-neutral-800">
           <p>
-            I teach at the Yale Jackson School, where my courses focus on global affairs,
-            the conduct of war, and the experiences of those who fight and live
-            through it.
+            I lecture two courses at the Yale Jackson School of Global Affairs &mdash;{" "}
+            <em>The Impact of War on Its (Willing and Unwilling) Participants</em>{" "}
+            and <em>Courage and Its Shadows</em>. Previous to this, I was an
+            undergrad here at Yale, and previous to that I served for over two
+            decades in the US Special Operations Forces. My career ended when I
+            was seriously wounded in 2009.
           </p>
           <p>
-            Replace this paragraph with a short bio: your background, the through-line
-            of your work, and what you're thinking about now.
+            I love dogs &mdash; they&rsquo;ve saved my life in combat. In 2014 I
+            founded{" "}
+            <a
+              href="https://spikesk9fund.org"
+              target="_blank"
+              rel="noreferrer"
+              className="underline-offset-4 hover:underline"
+            >
+              Spike&rsquo;s K9 Fund
+            </a>{" "}
+            to act as an advocate for our nation&rsquo;s working canine officers.
+          </p>
+          <p>
+            When I&rsquo;m not prepping for class, I write, read, and carcasstoss
+            (skydive) as often as possible.
           </p>
         </div>
       </section>
