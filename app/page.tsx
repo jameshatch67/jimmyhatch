@@ -114,6 +114,21 @@ export default function Home() {
           </li>
           <li className="py-4">
             <a
+              href="https://jameshatch67.substack.com/p/selling-out"
+              target="_blank"
+              rel="noreferrer"
+              className="group block"
+            >
+              <h3 className="text-lg font-medium text-neutral-900 group-hover:underline">
+                Selling Out
+              </h3>
+              <p className="mt-1 text-sm text-neutral-500">
+                The Belt of Pallas · May 2026
+              </p>
+            </a>
+          </li>
+          <li className="py-4">
+            <a
               href="https://jameshatch67.substack.com/p/lacrosse-teamwork-and-life"
               target="_blank"
               rel="noreferrer"
@@ -136,21 +151,6 @@ export default function Home() {
             >
               <h3 className="text-lg font-medium text-neutral-900 group-hover:underline">
                 Simple Soldiers
-              </h3>
-              <p className="mt-1 text-sm text-neutral-500">
-                The Belt of Pallas · April 2026
-              </p>
-            </a>
-          </li>
-          <li className="py-4">
-            <a
-              href="https://jameshatch67.substack.com/p/war-is-stupidity-with-a-body-count"
-              target="_blank"
-              rel="noreferrer"
-              className="group block"
-            >
-              <h3 className="text-lg font-medium text-neutral-900 group-hover:underline">
-                War Is Stupidity With a Body Count
               </h3>
               <p className="mt-1 text-sm text-neutral-500">
                 The Belt of Pallas · April 2026
