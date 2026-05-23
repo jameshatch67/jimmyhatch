@@ -1,7 +1,19 @@
 import { getLatestSubstackPosts } from "@/lib/substack";
 
+const FEATURED_POST = {
+  url: "https://jameshatch67.substack.com/p/what-american-leaders-can-learn-from",
+  title:
+    "What American Leaders Can Learn from Special Operations on this Memorial Day",
+  description:
+    "The most effective leadership model in the U.S. military has nothing to do with toughness — and everything to do with showing up.",
+};
+
 export default async function Home() {
-  const substackPosts = await getLatestSubstackPosts(3);
+  // Fetch one extra in case the featured post is in the latest set; we'll filter it out.
+  const recent = await getLatestSubstackPosts(4);
+  const substackPosts = recent
+    .filter((p) => p.url !== FEATURED_POST.url)
+    .slice(0, 3);
 
   return (
     <main className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
@@ -84,6 +96,25 @@ export default async function Home() {
         <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-[color:var(--accent)]">
           Research &amp; Writing
         </h2>
+        <a
+          href={FEATURED_POST.url}
+          target="_blank"
+          rel="noreferrer"
+          className="group mb-8 block border-l-2 border-[color:var(--accent)] pl-5"
+        >
+          <p className="text-xs uppercase tracking-wider text-[color:var(--accent)]">
+            Featured
+          </p>
+          <h3 className="mt-2 text-2xl font-semibold text-neutral-900 group-hover:underline">
+            {FEATURED_POST.title}
+          </h3>
+          <p className="mt-2 text-base text-neutral-700">
+            {FEATURED_POST.description}
+          </p>
+          <p className="mt-3 text-sm uppercase tracking-wider text-neutral-500 group-hover:text-neutral-900">
+            Read in The Belt of Pallas →
+          </p>
+        </a>
         <a
           href="https://jameshatch67.substack.com"
           target="_blank"
