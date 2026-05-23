@@ -1,4 +1,8 @@
-export default function Home() {
+import { getLatestSubstackPosts } from "@/lib/substack";
+
+export default async function Home() {
+  const substackPosts = await getLatestSubstackPosts(3);
+
   return (
     <main className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
       <header className="mb-16">
@@ -112,51 +116,23 @@ export default function Home() {
               </p>
             </a>
           </li>
-          <li className="py-4">
-            <a
-              href="https://jameshatch67.substack.com/p/selling-out"
-              target="_blank"
-              rel="noreferrer"
-              className="group block"
-            >
-              <h3 className="text-lg font-medium text-neutral-900 group-hover:underline">
-                Selling Out
-              </h3>
-              <p className="mt-1 text-sm text-neutral-500">
-                The Belt of Pallas · May 2026
-              </p>
-            </a>
-          </li>
-          <li className="py-4">
-            <a
-              href="https://jameshatch67.substack.com/p/lacrosse-teamwork-and-life"
-              target="_blank"
-              rel="noreferrer"
-              className="group block"
-            >
-              <h3 className="text-lg font-medium text-neutral-900 group-hover:underline">
-                Lacrosse, Teamwork, and Life
-              </h3>
-              <p className="mt-1 text-sm text-neutral-500">
-                The Belt of Pallas · May 2026
-              </p>
-            </a>
-          </li>
-          <li className="py-4">
-            <a
-              href="https://jameshatch67.substack.com/p/simple-soldiers"
-              target="_blank"
-              rel="noreferrer"
-              className="group block"
-            >
-              <h3 className="text-lg font-medium text-neutral-900 group-hover:underline">
-                Simple Soldiers
-              </h3>
-              <p className="mt-1 text-sm text-neutral-500">
-                The Belt of Pallas · April 2026
-              </p>
-            </a>
-          </li>
+          {substackPosts.map((post) => (
+            <li key={post.url} className="py-4">
+              <a
+                href={post.url}
+                target="_blank"
+                rel="noreferrer"
+                className="group block"
+              >
+                <h3 className="text-lg font-medium text-neutral-900 group-hover:underline">
+                  {post.title}
+                </h3>
+                <p className="mt-1 text-sm text-neutral-500">
+                  The Belt of Pallas{post.date ? ` · ${post.date}` : ""}
+                </p>
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
 
