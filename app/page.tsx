@@ -23,9 +23,16 @@ export default async function Home() {
           alt="Mina"
           className="mb-8 w-full max-w-md rounded-sm shadow-sm"
         />
-        <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Jimmy Hatch
-        </h1>
+        <div className="flex items-center gap-4">
+          <img
+            src="/logo.png"
+            alt="Further Still"
+            className="h-16 w-16 flex-none rounded-full shadow-sm sm:h-20 sm:w-20"
+          />
+          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+            Jimmy Hatch
+          </h1>
+        </div>
         <p className="mt-3 text-lg text-neutral-600">
           Yale Jackson School
         </p>
